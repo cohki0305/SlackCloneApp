@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="app-layout">
+    <div class="sidebar">
+    </div>
+    <div class="main-content">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -22,6 +26,23 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.app-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  /* ここを変更 */
+  background: #4A4141;
+  height: 100vh;
+}
+
+.main-content {
+  width: 100%;
+  background: #F1F1F1;
+  height: 100vh;
 }
 
 .button--green {

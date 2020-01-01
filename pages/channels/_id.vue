@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="chats-layout">
-      <messages />
+      <messages :messages="messages"/>
     </div>
     <div class="input-layout">
       <chat-form />

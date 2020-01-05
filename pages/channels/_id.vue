@@ -27,7 +27,7 @@ export default {
   },
   mounted () {
     const channelId = this.$route.params.id
-    db.collection('channels').doc(channelId).collection('messages')
+    db.collection('channels').doc(channelId).collection('messages').orderBy('createdAt')
       .onSnapshot((snapshot) => {
         snapshot.docChanges().forEach((change) => {
           const doc = change.doc

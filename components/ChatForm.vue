@@ -51,6 +51,7 @@ export default {
         .then((result) => {
           const user = result.user
           console.log(user)
+          this.dialogVisible = false
         }).catch((error) => {
           window.alert(error)
         })

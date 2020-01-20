@@ -1,12 +1,10 @@
 <template>
   <div class="container">
-    <button v-on:click="login">ログイン</button>
+    <button>ログイン</button>
   </div>
 </template>
 
 <script>
-import { firebase } from '~/plugins/firebase'
-
 export default {
   methods: {
   }
